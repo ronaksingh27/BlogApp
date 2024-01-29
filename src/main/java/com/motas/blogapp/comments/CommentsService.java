@@ -1,2 +1,7 @@
-package com.motas.blogapp.comments;public class CommentsService {
+package com.motas.blogapp.comments;
+
+import org.springframework.web.bind.annotation.RestController;
+
+
+public class CommentsService {
 }

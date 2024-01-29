@@ -1,2 +1,11 @@
-package com.motas.blogapp.Common.dtos;public class ErrorResponse {
+package com.motas.blogapp.Common.dtos;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class ErrorResponse
+{
+    private String message;
 }

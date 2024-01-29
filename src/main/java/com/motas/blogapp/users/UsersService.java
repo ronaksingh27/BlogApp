@@ -15,11 +15,11 @@ public class UsersService {
         this.modelMapper = modelMapper;
     }
 
-    public UserEntity createUser(CreateUserRequest u )
+    public  UserEntity createUser(CreateUserRequest u)
     {
         //creating a new user
         UserEntity newUser = modelMapper.map(u , UserEntity.class);
-        //PASSWORD TO BE SET
+        //PASSWORD TO BE ENCODED
 
         return usersRepository.save(newUser);//Saving the new user
     }

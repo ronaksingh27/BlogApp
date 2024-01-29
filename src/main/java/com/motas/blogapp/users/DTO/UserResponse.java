@@ -1,2 +1,13 @@
-package com.motas.blogapp.users.DTO;public class UserResponse {
+package com.motas.blogapp.users.DTO;
+
+import lombok.Data;
+
+@Data
+public class UserResponse {
+    private Long id;
+    private String username;
+    private String email;
+    private String bio;
+    private String image;
+    private String token;
 }
