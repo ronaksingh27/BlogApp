@@ -39,6 +39,7 @@ public class UsersController {
 
 
     //POST MAPPING TO LOGIN USEER
+    @PostMapping("/login")
     ResponseEntity<UserResponse> loginUser(@RequestBody LoginUserRequest request)
     {
         UserEntity savedUser = usersService.loginUser(request.getUsername(),request.getPassword());
